@@ -4,28 +4,19 @@
         "title": "TRF3 API",
         "description": "Acesso programático de informações é algo fundamental na comunicação  entre sistemas. Uma API fornece um acesso a dados padronizados\n            que podem ser intercambiaveis entre os diversos sistemas da Terceira Região.\nDado a isso, este projeto experimental tem como objetivo centralizar e disponibilizar endpoints modernos com baixíssima latência. utilizando tecnologias como Vercel Smart CDN responsável por fazer o cache das informações em atualmente 23 regiões distribuídas ao longo do mundo (incluindo Brasil). Então não importa o quão devagar for a fonte dos dados, nós queremos disponibilizá-la da forma mais rápida e moderna possível.\n\nRecursos disponíveis\n  - CEP\n  - DDD\n  - Bank\n  - CNPJ\n  - IBGE\n  - Feriados Nacionais\n  - Tabela FIPE",
         "termsOfService": "https://www.jfms.jus.br/",
-        "version": "1.0.0",
+        "version": "1.0",
         "contact": {
-            "url": "https://brasilapi.com.br"
+            "url": "#"
         },
         "license": {
             "name": "MIT",
             "url": "https://github.com/BrasilAPI/BrasilAPI/blob/master/LICENSE"
         }
     },
-    "tags": [
-        {
-            "name": "Brasil API",
-            "description": "Transformando o TRF3 em uma API",
-            "externalDocs": {
-                "description": "Saiba mais",
-                "url": "https://brasilapi.com.br/"
-            }
-        }
-    ],
+
     "servers": [
         {
-            "url": "https://brasilapi.com.br/api"
+            "url": "http://localhost:3000/api"
         }
     ]
 }

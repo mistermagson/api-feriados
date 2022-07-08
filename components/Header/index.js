@@ -9,7 +9,7 @@ export function Header() {
       <div className={styles.containerHeader}>
         <Image
           src="/images/logo-sjms-lateral.jpg"
-          alt="BrasilAPI Logo"
+          alt="JFMS Logo"
           width="286"
           height="93"
         />

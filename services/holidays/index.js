@@ -36,7 +36,6 @@ function formatDate(date) {
   return date.toISOString().substr(0, 10);
 }
 
-
 /**
  * Cálculo de feriados móveis baseados na Páscoa
  *
@@ -95,7 +94,7 @@ export function getFeriadosLegaisSemanaSanta(year) {
   const [refMonth, refDay] = pascalFullMoonMonthDay[year % 19];
   const movingDate = new Date(year, refMonth, refDay);
   const holidays = [];
-  //calcula a pascoa
+  // calcula a pascoa
   movingDate.setDate(movingDate.getDate() + 7 - movingDate.getDay());
 
   movingDate.setDate(movingDate.getDate() - 3);
@@ -110,8 +109,21 @@ export function getFeriadosLegaisSemanaSanta(year) {
     name: 'Feriado Legal - Quarta-feira Santa',
     type: 'legal',
   });
-  holidays.push( ['11-01', 'Finados'],
-  )
+  holidays.push({
+    date: `${year}-08-11`,
+    name: 'Dia do Advogado',
+    type: 'legal',
+  });
+  holidays.push({
+    date: `${year}-11-01`,
+    name: 'Feriado Legal - Finados',
+    type: 'legal',
+  });
+  holidays.push({
+    date: `${year}-12-08`,
+    name: 'Dia da Justiça',
+    type: 'legal',
+  });
 
   return holidays;
 }
@@ -169,7 +181,6 @@ export function getRecesso(year) {
     ['12-29', 'Recesso do Judiciário'],
     ['12-30', 'Recesso do Judiciário'],
     ['12-31', 'Recesso do Judiciário'],
-
   ];
   return fixedHolidays.map(([date, name]) => ({
     date: `${year}-${date}`,
@@ -191,8 +202,9 @@ function sortByDate(holidays) {
 }
 
 export default function getHolidays(year) {
+  const recesso = getRecesso(year);
   const easterHolidays = getEasterHolidays(year);
   const semanaSanta = getFeriadosLegaisSemanaSanta(year);
   const nationalHolidays = getNationalHolidays(year);
-  return sortByDate([...easterHolidays, ...nationalHolidays, ...semanaSanta], );
+  return sortByDate([...recesso, ...easterHolidays, ...nationalHolidays, ...semanaSanta]);
 }

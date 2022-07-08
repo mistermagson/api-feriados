@@ -3,12 +3,12 @@
         {
             "name": "Feriados Nacionais",
             "description": "Informações sobre feriados nacionais"
-        }        
+        }
     ],
     "paths": {
         "/feriados/v1/{ano}": {
             "get": {
-                "tags": ["Feriados Nacionais"],
+                "tags": ["Feriados Legais - TRF3"],
                 "summary": "Lista os feriados nacionais de determinado ano.",
                 "description": "Calcula os feriados móveis baseados na Páscoa e adiciona os feriados fixos",
                 "parameters": [
@@ -93,7 +93,7 @@
                 "example": {
                     "date": "2021-01-01",
                     "name": "Confraternização mundial",
-                    "type": "national"
+                    "type": "nacional"
                 }
             }
         }
