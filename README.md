@@ -35,6 +35,17 @@ Certifique-se de estar na pasta raiz do projeto para executar:
 
 3 - `npm run dev - nextjs local`
 
+## ENDPOINTS
+
+### Feriados
+`/api/feriados/{ano}`
+
+### Subseções
+`/api/subsecoes/v1`
+
+## LIVE VERSION
+https://api-trf3-feriados.vercel.app/
+
 ## Autores
 Este projeto foi inspirado  no projeto [BrasilAPI](https://github.com/BrasilAPI/BrasilAPI)
 

@@ -6,7 +6,7 @@ function Status(request, response) {
       id: 101,
       uf: 'MS',
       subsecao: 'Campo Grande',
-      feriados: [{ date: '08-26', descricao: 'Aniversário de Campo Grande', type: 'municipal' },{date: '06-13', descricao: 'Padroeiro de Campo Grande',type: 'municipal'}],
+      feriados: [],
     },
     {
       id: 102,
