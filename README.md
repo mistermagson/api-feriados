@@ -16,15 +16,27 @@ Recursos disponíveis:
   - [x] Nacionais
   - [x] Legais baseados na Páscoa
   - [x] Recesso do Judiciário
-  - [ ] Estaduais (MS e SP)
-  - [ ] Municipais, apenas para cidades onde há Subseção Judiciária
+  - [x] Estaduais (MS e SP)
+    - [x] MS | Municipais, apenas para cidades onde há Subseção Judiciária
+    - [x] SP | Municipais, apenas para cidades onde há Subseção Judiciária
 
+### TO-DO
+  - [ ] Criar BD para gerenciar os feriados (Sugestão __SQLite__)
 
 Dado a isso, este projeto experimental tem como objetivo centralizar e disponibilizar endpoints modernos com baixíssima latência.
 
+## RODAR LOCALMENTE
+
+Certifique-se de estar na pasta raiz do projeto para executar:
+
+1 - `Clonar este repositório`
+
+2 - `npm install`
+
+3 - `npm run dev - nextjs local`
 
 ## Autores
-Este projeto foi inspirado na no projeto [BrasilAPI](https://github.com/BrasilAPI/BrasilAPI)
+Este projeto foi inspirado  no projeto [BrasilAPI](https://github.com/BrasilAPI/BrasilAPI)
 
 | Adaptado para uso na [Justiça Federal de MS](https://www.jfms.jus.br) por |  [<img src="https://github.com/mistermagson.png?size=115" width=115><br><sub>@mistermagson</sub>](https://github.com/mistermagson) |
 | :---: |:----------------------------------------------------------------------------------------------------------------------------------:|
