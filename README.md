@@ -20,6 +20,8 @@ Recursos disponíveis:
     - [x] MS | Municipais, apenas para cidades onde há Subseção Judiciária
     - [x] SP | Municipais, apenas para cidades onde há Subseção Judiciária
 
+
+
 ### TO-DO
   - [ ] Criar BD para gerenciar os feriados (Sugestão __SQLite__)
 
@@ -38,7 +40,7 @@ Certifique-se de estar na pasta raiz do projeto para executar:
 ## ENDPOINTS
 
 ### Feriados
-`/api/feriados/{ano}`
+`/api/feriados/v1/{ano}`
 
 ### Subseções
 `/api/subsecoes/v1`
